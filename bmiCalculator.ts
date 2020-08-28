@@ -19,7 +19,6 @@ const parseArguments = (args: Array<string>): BmiValues => {
 
 const calculateBmi = (height: number, weight: number): string => {
   const bmi = weight / ((height * height) / 10000);
-  console.log(bmi);
   if (bmi < 18.5) return "Underweight";
   else if (bmi < 25) return "Normal weight";
   else if (bmi < 30) return "Overweight";
@@ -32,3 +31,5 @@ try {
 } catch (e) {
   console.log("error, something bad happened, message: ", e.message);
 }
+
+export {};
