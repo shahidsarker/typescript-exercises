@@ -1,5 +1,3 @@
-import { error } from "console";
-
 interface ExerciseValues {
   value1: Array<number>;
   value2: number;
