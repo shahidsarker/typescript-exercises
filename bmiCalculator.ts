@@ -32,4 +32,4 @@ try {
   console.log("error, something bad happened, message: ", e.message);
 }
 
-export { BmiValues, calculateBmi };
+export { calculateBmi };
