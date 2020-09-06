@@ -29,7 +29,7 @@ try {
   const { value1, value2 } = parseArguments(process.argv);
   console.log(calculateBmi(value1, value2));
 } catch (e) {
-  console.log("error, something bad happened, message: ", e);
+  console.log("error, something bad happened, message: ", e.message);
 }
 
 export { calculateBmi };

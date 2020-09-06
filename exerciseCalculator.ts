@@ -46,7 +46,7 @@ const calculateExercises = (
 // console.log(calculateExercises([3, 0, 2, 4.5, 0, 3, 1], 2));
 // console.log(calculateExercises([3, 0, 7, 4.5, 0, 3, 5], 2));
 
-export {};
+export { calculateExercises };
 
 try {
   const { value1, value2 } = parseArguments(process.argv);
