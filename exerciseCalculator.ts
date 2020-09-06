@@ -12,7 +12,10 @@ const parseArguments = (args: Array<string>): ExerciseValues => {
   };
 };
 
-const calculateExercises = (hours: Array<number>, target: number): object => {
+const calculateExercises = (
+  hours: Array<number>,
+  target: number
+): Record<string, unknown> => {
   const periodLength = hours.length;
   const trainingDays = hours.filter((h) => h !== 0).length;
   const average = hours.reduce((a, c) => a + c) / periodLength;
@@ -49,5 +52,6 @@ try {
   const { value1, value2 } = parseArguments(process.argv);
   console.log(calculateExercises(value1, value2));
 } catch (e) {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   console.log("error, something bad happened, message: ", e.message);
 }
